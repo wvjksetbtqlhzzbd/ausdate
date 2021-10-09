@@ -1,0 +1,41 @@
+{
+    "name": "billaroo/ausdate",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "czdmm@gmail.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/billaroo/ausdate",
+    "keywords": ["Laravel", "AusDate"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Billaroo\\AusDate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Billaroo\\AusDate\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Billaroo\\AusDate\\AusDateServiceProvider"
+            ],
+            "aliases": {
+                "AusDate": "Billaroo\\AusDate\\Facades\\AusDate"
+            }
+        }
+    }
+}
